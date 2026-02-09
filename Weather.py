@@ -327,7 +327,7 @@ with main_tab1:
 
 # Location Search
     st.sidebar.subheader("Search Locations")
-    search_query = st.sidebar.text_input("Search for a city", placeholder="e.g., Mumbai, New York, Tokyo")
+    search_query = st.sidebar.text_input("Search for a city", placeholder="e.g., Mumbai")
 
     if search_query:
         with st.spinner("Searching locations..."):
@@ -498,7 +498,7 @@ with main_tab1:
                         #st.metric("MAE", f"{data['metrics']['mae']:.2f}°C")
                         #st.metric("RMSE", f"{data['metrics']['rmse']:.2f}°C")
                         #st.metric("Adjusted R²", f"{data['metrics']['adj_r2']:.3f}")
-                
+                       
                 # Comparison Chart
                 st.header("Temperature Comparison")
                 
